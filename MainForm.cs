@@ -15,5 +15,22 @@ namespace DuelParser
         {
             InitializeComponent();
         }
+
+        private void UnitTestButton_Click(object sender, EventArgs e)
+        {
+            InstructionTextBox.Text = "";
+
+            List<string> lines = FileReader.ReadFromFile("C:\\Users\\Ossuary\\Documents\\Visual Studio 2010\\Projects\\DuelParser\\DuelParser\\SampleTextFiles\\SampleFistsDuel_AwkwardCaller.txt");
+            lines = FileReader.RemoveNonDuelText(lines);
+            lines = FileReader.RemoveExtraneousDuelText(lines);
+
+            string output = "";
+            foreach (string line in lines)
+            {
+                output += line + "\r\n";
+            }
+
+            InstructionTextBox.Text = output;
+        }
     }
 }

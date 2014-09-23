@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.InstructionTextBox = new System.Windows.Forms.TextBox();
+            this.UnitTestButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // InstructionTextBox
@@ -38,15 +39,27 @@
             this.InstructionTextBox.Multiline = true;
             this.InstructionTextBox.Name = "InstructionTextBox";
             this.InstructionTextBox.ReadOnly = true;
-            this.InstructionTextBox.Size = new System.Drawing.Size(461, 170);
+            this.InstructionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.InstructionTextBox.Size = new System.Drawing.Size(461, 758);
             this.InstructionTextBox.TabIndex = 0;
             this.InstructionTextBox.Text = resources.GetString("InstructionTextBox.Text");
+            // 
+            // UnitTestButton
+            // 
+            this.UnitTestButton.Location = new System.Drawing.Point(548, 12);
+            this.UnitTestButton.Name = "UnitTestButton";
+            this.UnitTestButton.Size = new System.Drawing.Size(75, 23);
+            this.UnitTestButton.TabIndex = 1;
+            this.UnitTestButton.Text = "UnitTest";
+            this.UnitTestButton.UseVisualStyleBackColor = true;
+            this.UnitTestButton.Click += new System.EventHandler(this.UnitTestButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 782);
+            this.Controls.Add(this.UnitTestButton);
             this.Controls.Add(this.InstructionTextBox);
             this.Name = "MainForm";
             this.Text = "MainForm  - Text";
@@ -58,6 +71,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox InstructionTextBox;
+        private System.Windows.Forms.Button UnitTestButton;
     }
 }
 

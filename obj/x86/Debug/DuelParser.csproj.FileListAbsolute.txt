@@ -1,0 +1,8 @@
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\obj\x86\Debug\DuelParser.MainForm.resources
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\obj\x86\Debug\DuelParser.Properties.Resources.resources
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\obj\x86\Debug\DuelParser.csproj.GenerateResource.Cache
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\bin\Debug\DuelParser.exe
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\bin\Debug\DuelParser.pdb
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\obj\x86\Debug\DuelParser.exe
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\obj\x86\Debug\DuelParser.pdb
+C:\Users\Ossuary\Documents\Visual Studio 2010\Projects\DuelParser\DuelParser\obj\x86\Debug\DuelParser.csprojResolveAssemblyReference.cache
