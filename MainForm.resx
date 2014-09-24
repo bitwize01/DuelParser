@@ -117,18 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="InstructionTextBox.Text" xml:space="preserve">
-    <value>Sample Text Box - This text box contains rudimentary instructions on how to create
-more form elements. 
-
-There should be a 'Toolbox' tab on the left side of your screen- this is used to drop
-new elements onto the form. The 'Common Controls' panel has just about everything
-you need.
-
-When creating a form element, edit the name with its intended purpose: thus, a ComboBox
-that would describe the source of the dueling data might be named "DuelingSourceComboBox,"
-and a TextBox that gives instructions like these might be named "InstructionTextBox."
-It's very important to do this naming for every element, as it lets us keep track of the state
-of the form from within the code.</value>
-  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

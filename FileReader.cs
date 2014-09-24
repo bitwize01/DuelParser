@@ -15,9 +15,8 @@ namespace DuelParser
 
                     /** Read the contents of the given file. */
 
-
             String[] linesStringArray = System.IO.File.ReadAllLines(filename);
-            lines = linesStringArray.ToList();      
+            lines = linesStringArray.ToList();      //Convert to a List for easier manipulation later
 
             return lines;
         }
@@ -28,8 +27,10 @@ namespace DuelParser
             List<string> lines = new List<string>();
             foreach (string line in RawLines)
             {
+                //Searching for a timestamp followed by DUEL
                 string sPattern = @"\[\d\d:\d\d:\d\d\] DUEL ";
 
+                //Returns true if the pattern was found
                 if (System.Text.RegularExpressions.Regex.IsMatch(line, sPattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                 {
                     Console.Out.WriteLine("Matched: " + line);
@@ -37,7 +38,7 @@ namespace DuelParser
                 }
                 else
                 {
-                    //Do nothing
+                    //Do nothing...?
                 }
                 
             }
@@ -56,7 +57,7 @@ namespace DuelParser
                 string lineFormated = line;
                 lineFormated = lineFormated.Trim();
 
-                //Remove BOLD styling, if found
+                //Remove BOLD styling, if found - but the first part of the bold is actually helpful to parse off of, so lets leave it for now
                 //lineFormated = Regex.Replace(lineFormated, @"<B>", "", RegexOptions.None);
                 lineFormated = Regex.Replace(lineFormated, @"<\/B>", "", RegexOptions.None);
 
